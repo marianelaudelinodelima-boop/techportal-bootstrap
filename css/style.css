@@ -1,0 +1,153 @@
+```css
+/* ===============================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 120px 0;
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ===============================
+   CARDS
+================================ */
+
+.card {
+    border: none;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ===============================
+   CAROUSEL
+================================ */
+
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+/* ===============================
+   PROGRESS BAR
+================================ */
+
+.progress {
+    height: 25px;
+}
+
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .carousel-img {
+        height: 300px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .carousel-img {
+        height: 250px;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+}
+```
