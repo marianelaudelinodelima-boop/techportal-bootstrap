@@ -1,4 +1,4 @@
-```css
+
 /* ===============================
    CONFIGURAÇÕES GERAIS
 ================================ */
@@ -150,4 +150,18 @@ body {
     }
 
 }
-```
+
+/* Melhorias adcionais para telas pequenas */
+
+@media (max-width: 576px) {
+    .bnt{
+        width:100%;
+    }
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
+    }
+    .progress {
+        height: 22px;
+    }
+}
